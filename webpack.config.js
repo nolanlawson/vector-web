@@ -1,6 +1,7 @@
 var path = require('path');
 var webpack = require('webpack');
 var ExtractTextPlugin = require("extract-text-webpack-plugin");
+var StatsPlugin = require('stats-webpack-plugin');
 
 module.exports = {
     module: {
@@ -63,6 +64,9 @@ module.exports = {
         new ExtractTextPlugin("bundle.css", {
             allChunks: true
         }),
+        new StatsPlugin('stats.json', {
+            chunkModules: true
+        })
     ],
     devtool: 'source-map'
 };

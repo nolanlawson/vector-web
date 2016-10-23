@@ -87,6 +87,7 @@
     "react-addons-test-utils": "^15.0.1",
     "rimraf": "^2.4.3",
     "source-map-loader": "^0.1.5",
+    "stats-webpack-plugin": "^0.4.2",
     "webpack": "^1.12.14"
   },
   "optionalDependencies": {
